@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
+
+html {
+  font-family: "Raleway", sans-serif;
+  margin: 30px;
+  max-width: 1400px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  align-items: flex-end;
+}
+
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+#navhébergements {
+  color: #0065fc;
+}
+
+#navactivités {
+  color: black;
+}
+
+#navsinscrire {
+  color: #0065fc;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3pt;
+  font-weight: bold;
+}
+h3 {
+  font-size: 8pt;
+  font-weight: bold;
+}
+
+#section1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#Recherche {
+  display: flex;
+  align-items: flex-start;
+}
+
+form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+i.fa-map-marker-alt {
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: black;
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+}
+
+::placeholder {
+  color: black;
+}
+input[type="search" i] {
+  width: auto;
+  line-height: 38px;
+  padding: 0 0 0 10px;
+  color: black;
+  font-weight: bold;
+  background-color: #ffffff;
+  border: 1px solid #f2f2f2;
+}
+
+#rechercher {
+  color: #ffffff;
+  background-color: #0065fc;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 10px 10px 0px;
+  text-align: center;
+}
+
+div.filtres {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 20 20 20px;
+  list-style: none;
+}
+
+.filtres ul {
+  display: flex;
+  align-items: stretch;
+  text-decoration: none;
+}
+.filtres li {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+}
+.filtres i {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #deebff;
+  color: #0065fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 20px;
+}
+#information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#section_2 {
+  display: flex;
+  flex-direction: row;
+}
+#hébergements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 30px 0 0;
+}
+#imghébergements {
+  border-radius: 10px 10px 0px 0px;
+  width: 150px;
+}
+#row1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#cannebière {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  width: 150px;
+  height: 200px;
+  box-shadow: 10px 5px 5px gray;
+}
+
+#hotelduport {
+  padding: 15px;
+}
+
+#mouettes {
+  padding: 15px;
+}
+#row2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+#row3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#populaires {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#titre_image {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#imgpopulaires {
+  border-radius: 10px 0px 0px 8px;
+  width: 100px;
+  float: left;
+}
+
+i.fas.fa-star.blue {
+  color: #0065fc;
+}
+i.fas.fa-star.grey {
+  color: rgb(217, 217, 217);
+}
+
+#section_3 {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-inline-end: 0px;
+  background-color: rgb(242, 242, 242);
+  padding: 20px;
+  font-size: 5pt;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+#apropos {
+  margin-right: 90px;
+}
+#noshébergements {
+  margin-right: 90px;
+}
+#assistance {
+  margin-right: 90px;
+}
