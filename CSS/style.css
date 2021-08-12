@@ -2,8 +2,6 @@
 
 html {
   font-family: "Raleway", sans-serif;
-  margin: 30px;
-  max-width: 1400px;
 }
 
 header {
@@ -288,7 +286,6 @@ i.fas.fa-star.grey {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  height: 370px;
 }
 #activités .frames {
   width: 80%;
@@ -329,7 +326,7 @@ img#fort {
 }
 
 img#iles {
-  height: 90px;
+  height: 100px;
   object-fit: cover;
   object-position: top;
 }
@@ -341,7 +338,7 @@ img#notredame {
 }
 img#parc {
   width: 100%;
-  height: 125px;
+  height: 130px;
   object-fit: cover;
   object-position: top;
 }
@@ -350,18 +347,112 @@ footer {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  margin-inline-end: 0px;
   background-color: rgb(242, 242, 242);
-  padding: 20px;
-  font-size: 5pt;
+  padding: 30px;
 }
 footer ul {
   list-style: none;
   padding: 0;
-}
-#apropos,
-#noshébergements,
-#assistance {
-  margin-right: 150px;
+  font-size: 5pt;
   line-height: 4em;
+}
+.footer {
+  width: 80%;
+}
+
+/* propriétés pour les écrans inférieurs 900px */
+@media all and (max-width: 900px) {
+  html {
+    width: auto;
+  }
+  body {
+    width: auto;
+    margin: 0px;
+  }
+  h1 {
+    line-height: 1em;
+  }
+
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .filtres ul {
+    display: flex;
+    flex-direction: column;
+  }
+  #section_2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hébergements {
+    border-radius: 0px;
+    background-color: white;
+    padding: 0px;
+    margin: 20px;
+    width: auto;
+  }
+  .hébergements .hotels {
+    display: flex;
+    flex-direction: column;
+  }
+  .hébergements .frames {
+    width: auto;
+    margin-bottom: 10px;
+  }
+  .hébergements img {
+    height: 120px;
+    max-height: 130px;
+  }
+
+  a.plus {
+    margin-top: 20px;
+  }
+
+  #section_3 {
+    margin: 20px 0px 0px 0px;
+  }
+  .populaires {
+    border-radius: 0px;
+    width: auto;
+  }
+  .populaires .frames {
+    margin-bottom: 10px;
+  }
+  #activités {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: auto;
+  }
+  #activités .frames {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #activités img {
+    height: 130px;
+    max-height: 130px;
+  }
+  #group1,
+  #group2 {
+    width: 100%;
+    height: 30%;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer {
+    padding: 20px 20px 20px 10px;
+  }
 }
