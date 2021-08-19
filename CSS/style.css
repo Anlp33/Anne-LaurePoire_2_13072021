@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap");
 
-html {
+body {
   font-family: "Raleway", sans-serif;
+  margin: 10px;
+  max-width: 1440px;
 }
 
 header {
@@ -28,7 +30,6 @@ nav li {
 nav a {
   text-decoration: none;
   color: #0065fc;
-  font-size: 10px;
   padding: 20px;
 }
 nav li a:hover {
@@ -46,6 +47,7 @@ nav li a:hover {
 a {
   text-decoration: none;
   color: black;
+  display: inherit;
 }
 
 h3 {
@@ -61,10 +63,6 @@ h1 {
 
 h3 {
   font-size: 16px;
-}
-
-p {
-  font-size: 10px;
 }
 
 span {
@@ -93,6 +91,9 @@ i.fa-map-marker-alt {
   color: black;
   background-color: #f2f2f2;
   border-radius: 10px 0 0 10px;
+}
+.fa-search {
+  display: none;
 }
 
 ::placeholder {
@@ -223,7 +224,6 @@ div.filtres {
 .hébergements .details {
   margin: 5px 0px 10px 10px;
 }
-
 a.plus {
   font-weight: bold;
   margin-top: 10px;
@@ -270,7 +270,7 @@ a.plus {
   padding: 5px 5px 0px 15px;
 }
 .populaires .stars {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 i.fas.fa-star.blue {
   color: #0065fc;
@@ -331,7 +331,6 @@ img#fort {
 img#iles {
   height: 100px;
   object-fit: cover;
-  object-position: top;
 }
 img#notredame {
   width: 100%;
@@ -343,7 +342,6 @@ img#parc {
   width: 100%;
   height: 130px;
   object-fit: cover;
-  object-position: top;
 }
 
 footer {
@@ -422,6 +420,24 @@ footer ul {
   }
   .filtres li {
     margin: 4px;
+  }
+  .fa-info {
+    height: 20px;
+    width: 30px;
+  }
+  button#rechercher {
+    display: none;
+  }
+  .fa-search {
+    display: flex;
+    color: #ffffff;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 10px;
+    width: 40px;
+    line-height: 40px;
+    justify-content: center;
+    margin-left: -7px;
   }
   #section_1 {
     margin: 20px;
