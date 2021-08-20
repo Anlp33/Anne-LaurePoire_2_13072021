@@ -87,7 +87,7 @@ i.fa-map-marker-alt {
   text-align: center;
   color: black;
   background-color: #f2f2f2;
-  border-radius: 10px 0 0 10px;
+  border-radius: 15px 0 0 15px;
 }
 .fa-search {
   display: none;
@@ -116,7 +116,7 @@ input[type="search" i] {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   border: none;
-  border-radius: 0 10px 10px 0px;
+  border-radius: 0 15px 15px 0px;
   text-align: center;
 }
 
@@ -207,12 +207,12 @@ div.filtres {
   width: 30%;
   margin-bottom: 30px;
   padding: 4px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: white;
   box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
 .hébergements img {
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 15px 15px 0px 0px;
   height: 95px;
   width: 100%;
   max-height: 90px;
@@ -252,12 +252,12 @@ a.plus {
   padding: 4px 10px 4px 4px;
   height: 130px;
   margin-bottom: 30px;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: white;
   box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
 .populaires img {
-  border-radius: 10px 0px 0px 10px;
+  border-radius: 15px 0px 0px 15px;
   width: 40%;
   object-fit: cover;
 }
@@ -279,65 +279,65 @@ i.fas.fa-star.grey {
 #section_3 {
   display: flex;
   flex-direction: column;
-  margin: 40px 0px 30px 0px;
+  margin-bottom: 40px;
 }
 #activités {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-}
-#activités .frames {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
 #activités img {
-  height: 300px;
   width: 100%;
-  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
 #activités h3 {
-  padding: 10px;
+  margin: 15px;
 }
-#group1,
-#group2 {
+#column_1,
+#column_3 {
+  width: 23%;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
+}
+
+#column_1 img,
+#column_3 img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+#column_2,
+#column_4 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 30%;
+  justify-content: space-between;
+  width: 23%;
 }
-
-.group1 img,
-.group2 img {
-  height: 50%;
-  width: 100%;
+#fort,
+#iles,
+#notredame,
+#parc {
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
-img#fort {
-  height: 135px;
-  width: 100%;
+#fort img {
+  height: 160px;
   object-fit: cover;
 }
-
-img#iles {
-  height: 100px;
-  object-fit: cover;
-}
-img#notredame {
-  width: 100%;
+#iles img {
   height: 100px;
   object-fit: cover;
   object-position: top;
 }
-img#parc {
-  width: 100%;
-  height: 130px;
+#notredame img {
+  height: 120px;
+  object-fit: cover;
+  object-position: top;
+}
+#parc img {
+  height: 140px;
   object-fit: cover;
 }
 
@@ -436,7 +436,7 @@ footer ul {
     color: #ffffff;
     background-color: #0065fc;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     width: 45px;
     height: 45px;
     align-items: center;
@@ -494,26 +494,27 @@ footer ul {
   #titre {
     margin: 20px 20px 5px 20px;
   }
+
   #activités {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: auto;
   }
-  #activités .frames {
+  #column_1,
+  #column_2,
+  #column_3,
+  #column_4 {
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
   }
 
+  #fort,
+  #notredame {
+    margin-bottom: 20px;
+    width: auto;
+  }
   #activités img {
     height: 130px;
     max-height: 130px;
-  }
-  #group1,
-  #group2 {
-    width: 100%;
-    height: 30%;
   }
 
   footer {
