@@ -83,7 +83,9 @@ form {
 
 i.fa-map-marker-alt {
   width: 45px;
-  line-height: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   color: black;
   background-color: #f2f2f2;
@@ -216,7 +218,7 @@ div.filtres {
 .hébergements .details {
   margin: 5px 0px 10px 10px;
 }
-a.plus {
+a#plus {
   font-weight: bold;
   margin-top: 10px;
 }
@@ -416,8 +418,8 @@ footer ul {
     margin: 4px;
   }
   .fa-info {
-    height: 20px;
-    width: 30px;
+    height: 30px;
+    width: 40px;
   }
   button#rechercher {
     display: none;
@@ -572,10 +574,7 @@ footer ul {
   .filtres li {
     margin: 4px;
   }
-  .fa-info {
-    height: 20px;
-    width: 30px;
-  }
+ 
   button#rechercher {
     display: none;
   }
