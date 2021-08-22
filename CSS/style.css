@@ -13,7 +13,7 @@ header {
 }
 
 nav {
-  margin-left: 550px;
+  margin-left: auto;
 }
 
 nav ul {
@@ -39,6 +39,7 @@ nav li a:hover {
   font-weight: bold;
   text-decoration: none;
   color: #0065fc;
+  padding-left: 30px;
 }
 /*Main*/
 
@@ -122,7 +123,6 @@ input[type="search" i] {
 
 div.filtres {
   display: flex;
-  flex-direction: row;
   align-items: center;
   list-style: none;
 }
@@ -358,8 +358,8 @@ footer ul {
   width: 80%;
 }
 
-/* propriétés pour les écrans inférieurs 900px */
-@media all and (max-width: 900px) {
+/* propriétés pour les écrans inférieurs 700px */
+@media all and (max-width: 700px) {
   html {
     width: auto;
   }
@@ -523,5 +523,96 @@ footer ul {
   }
   .footer {
     padding: 20px 20px 20px 10px;
+  }
+}
+/* propriétés pour les tablettes*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  header img {
+    order: 1;
+    margin: 20px 20px 0px 20px;
+  }
+  #inscription {
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 20px 0px 20px;
+  }
+  nav {
+    margin: 0px;
+    order: 3;
+    width: 100%;
+  }
+  nav ul {
+    order: 2;
+    border-bottom: 2px solid #d9d9d9;
+    padding: 0px;
+    justify-content: space-around;
+  }
+  nav li a:hover {
+    border-bottom: 2px solid #0065fc;
+    border-top: none;
+    padding-bottom: 20px;
+  }
+  nav li {
+    padding: 0px;
+  }
+
+  div#présentation {
+    margin-bottom: 30px;
+  }
+  div.filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .filtres ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-top: 10px;
+  }
+  .filtres li {
+    margin: 4px;
+  }
+  .fa-info {
+    height: 20px;
+    width: 30px;
+  }
+  button#rechercher {
+    display: none;
+  }
+  .fa-search {
+    display: flex;
+    color: #ffffff;
+    background-color: #0065fc;
+    border: none;
+    border-radius: 15px;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-left: -7px;
+  }
+  input[type="search" i] {
+    width: 250px;
+  }
+
+  #section_2 {
+    flex-wrap: wrap;
+  }
+  .hébergements {
+    width: auto;
+    margin: 0px 0px 30px 0px;
+  }
+  .populaires {
+    width: auto;
   }
 }
