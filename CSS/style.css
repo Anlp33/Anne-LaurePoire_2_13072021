@@ -73,7 +73,6 @@ span {
 
 #Recherche {
   display: flex;
-  align-items: flex-start;
 }
 
 form {
@@ -97,12 +96,11 @@ i.fa-map-marker-alt {
 ::placeholder {
   color: black;
   text-decoration: none;
-  font-style: "raleway";
+  font-family: "raleway";
 }
 
-input[type="search" i] {
+#maRecherche {
   width: auto;
-  line-height: 38px;
   padding: 0 0 0 10px;
   color: black;
   font-weight: bold;
@@ -129,8 +127,6 @@ div.filtres {
 
 .filtres ul {
   display: flex;
-  align-items: stretch;
-  text-decoration: none;
 }
 .filtres li {
   display: flex;
@@ -167,7 +163,6 @@ div.filtres {
 }
 #information {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -235,7 +230,6 @@ a.plus {
 
 #titre {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   justify-content: space-between;
 }
@@ -243,7 +237,6 @@ a.plus {
 .populaires .hotels {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
 }
 .populaires .vignettes {
   display: flex;
@@ -344,8 +337,6 @@ i.fas.fa-star.grey {
 
 footer {
   display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
   background-color: rgb(242, 242, 242);
   padding: 30px;
 }
@@ -443,7 +434,7 @@ footer ul {
     justify-content: center;
     margin-left: -7px;
   }
-  input[type="search" i] {
+  #maRecherche {
     width: 250px;
   }
   #section_1 {
@@ -530,7 +521,6 @@ footer ul {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   header {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -601,7 +591,7 @@ footer ul {
     justify-content: center;
     margin-left: -7px;
   }
-  input[type="search" i] {
+  #maRecherche {
     width: 250px;
   }
 
