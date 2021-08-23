@@ -15,7 +15,7 @@ header {
 }
 
 p {
-  margin: 6px 0px 6px 0px;
+  margin: 8px 0px 6px 0px;
 }
 
 nav {
@@ -180,24 +180,25 @@ div.filtres {
   align-items: center;
   justify-content: center;
   color: #0065fc;
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
   border: #f2f2f2 solid 2px;
   border-radius: 30px;
   margin-right: 10px;
+  font-size: 12px;
 }
 
 #section_2 {
   display: flex;
   flex-direction: row;
 }
-.hébergements {
+#hébergements {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-right: 50px;
-  padding: 10px 40px 0px 40px;
+  padding: 20px 40px 40px 40px;
 }
 
 i.fas.fa-star {
@@ -205,27 +206,28 @@ i.fas.fa-star {
   margin: -1px;
 }
 
-.hébergements .hotels {
+#hébergements .hotels {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 5px;
 }
 
-.hébergements .vignettes {
+#hébergements .vignettes {
   width: 30%;
   margin-bottom: 30px;
   padding: 4px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
-.hébergements img {
-  border-radius: 15px 15px 0px 0px;
+#hébergements img {
+  border-radius: 20px 20px 0px 0px;
   height: 130px;
   width: 100%;
   object-fit: cover;
 }
-.hébergements .details {
+#hébergements .details {
   margin: 5px 0px 10px 10px;
 }
 a#plus {
@@ -237,7 +239,7 @@ a#plus {
   flex-direction: column;
   background-color: rgb(242, 242, 242);
   border-radius: 20px;
-  padding: 10px 40px 0px 40px;
+  padding: 20px 40px 0px 40px;
 }
 
 #titre {
@@ -249,6 +251,7 @@ a#plus {
 .populaires .hotels {
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
 }
 .populaires .vignettes {
   display: flex;
@@ -256,12 +259,12 @@ a#plus {
   height: auto;
   padding: 4px 10px 4px 4px;
   margin-bottom: 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
 .populaires img {
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 20px 0px 0px 20px;
   width: 70%;
   height: 150px;
   object-fit: cover;
@@ -291,33 +294,34 @@ i.fas.fa-star.grey {
 #section_3 {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin: 40px 0px 40px 0px;
 }
 #activités {
   display: flex;
   justify-content: space-between;
+  margin: 10px 0px 10px 0px;
 }
 #activités img {
   width: 100%;
   border-radius: 10px 10px 0px 0px;
 }
 #activités h3 {
-  margin: 15px;
+  margin: 20px;
 }
 #column_1,
 #column_3 {
   width: 23%;
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
 
 #column_1 img,
 #column_3 img {
-  height: 350px;
+  height: 440px;
   width: 100%;
   object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
+  border-radius: 20px 20px 0px 0px;
 }
 #column_2,
 #column_4 {
@@ -330,27 +334,31 @@ i.fas.fa-star.grey {
 #iles,
 #notredame,
 #parc {
-  border-radius: 15px;
+  border-radius: 20px;
   background-color: white;
   box-shadow: 4px 4px 14px 1px rgb(228, 228, 228);
 }
 #fort img {
-  height: 160px;
+  height: 200px;
   object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
 }
 #iles img {
-  height: 100px;
+  height: 130px;
   object-fit: cover;
-  object-position: top;
+  border-radius: 20px 20px 0px 0px;
 }
 #notredame img {
-  height: 120px;
+  height: 155px;
   object-fit: cover;
   object-position: top;
+  border-radius: 20px 20px 0px 0px;
 }
 #parc img {
-  height: 140px;
+  height: 175px;
   object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  object-position: TOP;
 }
 
 footer {
@@ -374,7 +382,6 @@ footer ul {
   }
   body {
     width: auto;
-    margin: 0px;
   }
   h1 {
     line-height: 1em;
@@ -431,8 +438,8 @@ footer ul {
     margin: 4px;
   }
   .fa-info {
-    height: 30px;
-    width: 40px;
+    height: 25px;
+    width: 35px;
   }
   button#rechercher {
     display: none;
@@ -449,6 +456,9 @@ footer ul {
     justify-content: center;
     margin-left: -7px;
   }
+#information {
+  align-items: baseline;
+}
   #maRecherche {
     width: 250px;
   }
@@ -459,22 +469,22 @@ footer ul {
     display: flex;
     flex-direction: column-reverse;
   }
-  .hébergements {
+  #hébergements {
     border-radius: 0px;
     background-color: white;
     padding: 0px;
     margin: 20px;
     width: auto;
   }
-  .hébergements .hotels {
+  #hébergements .hotels {
     display: flex;
     flex-direction: column;
   }
-  .hébergements .vignettes {
+  #hébergements .vignettes {
     width: auto;
     margin-bottom: 15px;
   }
-  .hébergements img {
+  #hébergements img {
     height: 120px;
     max-height: 130px;
   }
@@ -512,6 +522,7 @@ footer ul {
     width: 100%;
     margin-bottom: 20px;
   }
+
   #fort,
   #notredame {
     margin-bottom: 20px;
@@ -531,7 +542,8 @@ footer ul {
 }
 /* propriétés pour les tablettes*/
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media all and (min-width: 767px) and (max-width: 1024px) {
+ 
   header {
     display: flex;
     flex-wrap: wrap;
@@ -608,11 +620,18 @@ footer ul {
   #section_2 {
     flex-wrap: wrap;
   }
-  .hébergements {
+  #hébergements {
     width: auto;
     margin: 0px 0px 30px 0px;
   }
   .populaires {
     width: auto;
+  }
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
