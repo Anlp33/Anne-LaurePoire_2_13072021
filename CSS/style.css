@@ -27,7 +27,7 @@ nav ul {
 }
 nav li {
   list-style: none;
-  padding: 30px 10px 30px;
+  padding: 20px 10px 30px;
 }
 
 nav a {
@@ -35,8 +35,8 @@ nav a {
   color: #0065fc;
   padding: 20px;
 }
-nav li a:hover {
-  border-top: 2px solid #0065fc;
+nav li:hover {
+  border-top: 2.5px solid #0065fc;
 }
 #navactivités {
   color: black;
@@ -45,7 +45,8 @@ nav li a:hover {
   font-weight: bold;
   text-decoration: none;
   color: #0065fc;
-  padding: 30px;
+  margin-top: -12px;
+  margin-left: 30px;
 }
 /*Main*/
 
@@ -407,18 +408,23 @@ footer ul {
   }
   nav ul {
     order: 2;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 3px solid #d9d9d9;
+
     padding: 0px;
     justify-content: space-around;
   }
-  nav li a:hover {
-    border-bottom: 2px solid #0065fc;
-    border-top: none;
-    padding-bottom: 20px;
-  }
   nav li {
     padding: 0px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
   }
+  nav li:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    margin-bottom: -3px;
+  }
+
   #introduction {
     padding-bottom: 30px;
   }
@@ -456,9 +462,9 @@ footer ul {
     justify-content: center;
     margin-left: -7px;
   }
-#information {
-  align-items: baseline;
-}
+  #information {
+    align-items: baseline;
+  }
   #maRecherche {
     width: 250px;
   }
@@ -508,6 +514,9 @@ footer ul {
   .populaires .hotels {
     margin-bottom: 20px;
   }
+  #parc img {
+    object-position: center;
+  }
   #titre {
     margin: 20px 20px 5px 20px;
   }
@@ -542,8 +551,7 @@ footer ul {
 }
 /* propriétés pour les tablettes*/
 
-@media all and (min-width: 767px) and (max-width: 1024px) {
- 
+@media all and (min-width: 768px) and (max-width: 1024px) {
   header {
     display: flex;
     flex-wrap: wrap;
