@@ -407,12 +407,11 @@ footer ul {
   nav ul {
     order: 2;
     border-bottom: 3px solid #d9d9d9;
-
-    padding: 0px;
     justify-content: space-around;
+    padding: 0px;
   }
   nav li {
-    padding: 0px;
+    padding: 15px;
     width: 50%;
     display: flex;
     justify-content: center;
@@ -424,7 +423,7 @@ footer ul {
   }
 
   #introduction {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
   }
   div.filtres {
     display: flex;
@@ -448,6 +447,7 @@ footer ul {
   button#rechercher {
     display: none;
   }
+
   .fa-search {
     display: flex;
     color: #ffffff;
@@ -544,7 +544,7 @@ footer ul {
     flex-direction: column;
   }
   .footer {
-    padding: 20px 20px 20px 10px;
+    padding: 20px 20px 0px 10px;
   }
 }
 /* propriétés pour les tablettes*/
@@ -575,17 +575,20 @@ footer ul {
   }
   nav ul {
     order: 2;
-    border-bottom: 2px solid #d9d9d9;
-    padding: 0px;
+    border-bottom: 3px solid #d9d9d9;
     justify-content: space-around;
-  }
-  nav li a:hover {
-    border-bottom: 2px solid #0065fc;
-    border-top: none;
-    padding-bottom: 20px;
+    padding: 0px;
   }
   nav li {
-    padding: 0px;
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  nav li:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+    margin-bottom: -3px;
   }
 
   div#présentation {
