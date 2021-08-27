@@ -551,7 +551,6 @@ footer ul {
   #Recherche {
     display: flex;
     margin-top: 20px;
-    justify-content: center;
   }
   #hébergements img {
     height: 200px;
@@ -608,7 +607,6 @@ footer ul {
   #Recherche {
     display: flex;
     margin-top: 20px;
-    justify-content: center;
   }
   div#présentation {
     margin-bottom: 30px;
