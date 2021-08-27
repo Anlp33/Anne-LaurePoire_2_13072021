@@ -18,6 +18,12 @@ p {
   margin: 8px 0px 6px 0px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+  display: inherit;
+}
+
 nav {
   margin-left: auto;
 }
@@ -29,17 +35,17 @@ nav li {
   list-style: none;
   padding: 30px;
 }
-
 nav a {
   text-decoration: none;
+}
+nav a:hover {
   color: #0065fc;
 }
 nav li:hover {
   border-top: 2.5px solid #0065fc;
+  color: #0065fc;
 }
-#navactivités {
-  color: black;
-}
+
 #navsinscrire {
   font-weight: bold;
   text-decoration: none;
@@ -47,12 +53,6 @@ nav li:hover {
   margin-left: 30px;
 }
 /*Main*/
-
-a {
-  text-decoration: none;
-  color: black;
-  display: inherit;
-}
 
 h1 {
   font-size: 24px;
@@ -374,7 +374,7 @@ footer ul {
   width: 80%;
 }
 
-/* propriétés pour les écrans inférieurs 767px */
+/* propriétés pour les écrans inférieurs à 767px */
 @media all and (max-width: 767px) {
   html {
     width: auto;
@@ -547,8 +547,23 @@ footer ul {
     padding: 20px 20px 0px 10px;
   }
 }
-/* propriétés pour les tablettes*/
+@media all and (max-width: 767px) and (orientation: landscape) {
+  #Recherche {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  #hébergements img {
+    height: 200px;
+    max-height: 200px;
+  }
 
+  #activités img {
+    height: 200px;
+    max-height: 200px;
+  }
+}
+/* propriétés pour les tablettes*/
 @media all and (min-width: 768px) and (max-width: 1158px) {
   body {
     margin: 30px;
@@ -590,7 +605,11 @@ footer ul {
     border-top: none;
     margin-bottom: -3px;
   }
-
+  #Recherche {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
   div#présentation {
     margin-bottom: 30px;
   }
@@ -639,7 +658,32 @@ footer ul {
   .populaires {
     width: 100%;
   }
+  #column_1 img,
+  #column_3 img {
+    height: 290px;
+  }
+  #fort img {
+    height: 150px;
+  }
+  #iles img {
+    height: 80px;
+  }
+  #notredame img {
+    height: 100px;
+  }
+  #parc img {
+    height: 110px;
+  }
+  #activités h3 {
+    margin: 10px;
+  }
 }
+@media all and (min-width: 768px) and (max-width: 1158px) and (orientation: landscape) {
+  .populaires img {
+    height: 200px;
+  }
+}
+/* propriétés pour les écrans de 1159px à 1550px*/
 @media all and (min-width: 1159px) and (max-width: 1550px) {
   body {
     margin: 30px;
